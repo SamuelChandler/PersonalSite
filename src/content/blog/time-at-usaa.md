@@ -1,6 +1,7 @@
 ---
 author: Samuel Chandler
 pubDatetime: 2024-08-15T19:22:00Z
+modDatetime: 2024-08-16T18:56:25Z
 title: My Time At USAA 
 slug: time-at-usaa
 featured: true
@@ -21,7 +22,7 @@ description:
 ## My Role and Team
 Within my time at USAA, I worked within the Bill Pay department which was responsible for the method for which are members paid for their bills within USAA's Web and Mobile interfaces. 
 
-My Role Within this team was mainly to create Integration Tests for the new endpoints we were developing during the sprints that took place during my time at USAA.
+My role within this team was mainly to create Integration Tests for the new endpoints we were developing during the sprints that took place during my time at USAA.
 
 ## Postman And Integration Testing 
 
