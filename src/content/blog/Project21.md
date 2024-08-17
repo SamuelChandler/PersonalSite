@@ -4,7 +4,7 @@ pubDatetime: 2024-08-16T18:56:25Z
 title: Project 21cm
 slug: Project21
 featured: true
-draft: true
+draft: false
 tags:
   - School
   - experience
@@ -87,4 +87,36 @@ With that in mind we determined that a 2 motor system would work best where each
 
 The first Motor would change the azimuth of the device by rotating the other motor and antenna which will be placed atop a spinning plate. 
 
-The second motor would be placed next to the antenna and will create 
+The second motor would be placed next to the antenna and will control the elevation of the antenna and hold it in place when traversing the azimuth when scanning 
+
+The Final piece the the mounting system will be the motor controllers themselves which we plan on using to communicate the position of the antenna to the personal device of the user 
+device for the sake of creating the image.
+
+## Programming
+
+The Program itself can be split into two separate systems the first is the recording process that will take the magnitude of the signal and store that result with the location of the antenna given by the motor controller.
+
+The Second is the script for the image creation itself taking the recorded information and creating an image from that information once fully collected. 
+
+### Recording Process 
+
+![MotorControl](assets/images/MotorControllerCommunication.png)
+
+Above is the current plan we developed for recording the position of the antenna in between recording the signals magnitude through the SDR.
+
+The measurements will upon completing the recording be saved into a xlsx file that we will then use to create an image using the Image process explained in later. 
+
+### Image Creation
+
+![ImageCreationProccess](assets/images/Conversion_Process.png)
+
+The process detailed can essentially be boiled down into 3 steps for simplicity 
+1. Scale the Magnitude or the Readings to Be Relative to each other and to detect outliers from the other readings. 
+2. Use The Location of the reading to map that magnitude to the image
+3. Create and store the resulting image to the personal device of the user
+
+With this image we can quantify the successfulness based on the requirements we initially created. In Addition we are also now able to share cool photo's of the hydrogen line to others!
+
+# Conclusion
+
+With this idea and plan we were able to present the idea during our senior design expo during Spring 2024 and get feedback on our design by many engineers that are currently in industry and we look forward to constructing the device during this fall semester. 
