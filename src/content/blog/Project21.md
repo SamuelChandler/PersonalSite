@@ -1,7 +1,8 @@
 ---
 author: Samuel Chandler
 pubDatetime: 2024-08-16T18:56:25Z
-modDatetime: 2024-08-17T21:28:47Z
+modDatetime: 2024-08-21T02:41:47Z
+readingTime: 12 min
 title: Project 21cm
 slug: Project21
 featured: true
