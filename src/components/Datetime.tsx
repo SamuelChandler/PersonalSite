@@ -44,10 +44,6 @@ export default function Datetime({
           pubDatetime={pubDatetime}
           modDatetime={modDatetime}
         />
-      </span>
-
-      <span className={`italic ${size === "sm" ? "text-sm" : "text-base"}`}>
-        <FormattedDatetime pubDatetime={pubDatetime} modDatetime={modDatetime} />
         <span> ({readingTime})</span> {/* display reading time */}
       </span>
     </div>
