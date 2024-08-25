@@ -35,5 +35,29 @@ These range from developing trainings for PLC's, Developing a Python application
 
 ## PLC Trainings
 
+A Programmable Logic Controller (PLC) is a tool that was used throughout Raymond to create testing environments and in some of our models due to the ease of programming, high reliability, and diagnostic capabilities. 
+
+Before my time at Raymond a previous intern worked on a control box that would be used for testing and as a learning tools for new employee onboarding. When trying to work with them however, I found that there were multiple issues I ran into in setting up the environment and found a abandoned task for creating learning modules for the create PLC training boxes.
+
+I decided that the creation of these learning labs for the test boxes would be worth the time and would speed up the learning process for future employees. 
+
+With this in mind I created 2 labs for the Direct Soft 6 Suite of PLC's.
+
+### Lab 1, Basic Input Output
+
+For the first Lab I focused on detailing how to send and receive signals too and from the PLC as well how to set up the PLC using Direct Soft 6.
+
+This was pretty simple with the exclusion of making sure to properly detail the set up of the software to prevent any forseeable issues. 
+
+The end result of the lab would be a basic device that would light up a certain color based on the button pressed using the PLC's relays and some basic ladder logic (the method you program the PLC's Logic)
+
+### Lab 2, A Focus on Ladder Logic and Control Blocks
+
+For the second lab I decided to go into a bit more detail on how information is stored within the PLC by creating directions to create a binary counter with the 3 lights that were used in the previous lab. 
+
+The general Idea for the end product was to create a binary counter that would increase when a button was pressed and reset at its max value or when a second button was pressed.
+
+This would ideally teach the concept of how information was stored within the PLC's through the use of registers and how there could be used and accessed through the use of control blocks to add or subtract from the current total. 
+
 
 
