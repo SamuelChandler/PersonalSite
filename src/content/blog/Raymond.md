@@ -57,7 +57,33 @@ For the second lab I decided to go into a bit more detail on how information is 
 
 The general Idea for the end product was to create a binary counter that would increase when a button was pressed and reset at its max value or when a second button was pressed.
 
-This would ideally teach the concept of how information was stored within the PLC's through the use of registers and how there could be used and accessed through the use of control blocks to add or subtract from the current total. 
+This would ideally teach the concept of how information was stored within the PLC's through the use of registers and how there could be used and accessed through the use of control blocks to add or subtract from the current total displaying the result as a binary number through the Lights of the training box. 
+
+## Cable Test Fixture
+
+After completing the training documentation on the PLC's I then got to work on completing the test fixture that was initially created by a previous intern. 
+
+The Fixture itself was designed to test the long term capabilities of cables we were going to use in production by applying torque to 8 cable samples through a motor that would twist the cables. The PLC would then detect when the internal of the cable would become open and alert the user and stop the count giving the amount of cycles the cable could withstand before breaking.
+
+The initial state of the fixture when I received was a bit worse for ware, as it was built atop a wooden plank and the connections were hand soldered for each cable. However it was in a functioning state and was able to correctly stop and detect openings in the cable.
+
+### Improvements
+
+The first thing I did when I received the fixture was to move it to a proper case that would contain the PLC and components needed to keep the fixture running and to prevent any outside interference when possible. This also involved my cleaning up cable lengths. 
+
+The power supply for the fixture was also using a variable power supply which was a bit bulky and used a recourse that we would often need for other testing. I went ahead and sourced a 24 power supply to replace this and added a buck converter to lower the voltage for the motor controller to use at 5V. 
+
+One of the final improvements that I made to the fixture was adding terminal blocks to the ring of the cables to allow the easy replacement of the cables so we wouldn't have to hand solder each cable when one would be replaced which was mainly done out of convenience for setup and teardown. 
+
+### Testing 
+
+After the improvements made to the fixture, I was able to start a trial run of the fixture leaving it to run for about a month to test if the fixture would break before the cables would. 
+
+Unfortunately nothing stopped working with the exclusion of power outages that would take place and even then the PLC kept track of the readings and you could start the process from where it left off. 
+
+Even on my last day nothing broke and I still believe that the fixture is running somewhere at Raymond. 
+
+
 
 
 
