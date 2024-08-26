@@ -4,7 +4,7 @@ pubDatetime: 2024-08-24T00:39:58Z
 title: My Time At The Raymond Corporation
 slug: Raymond
 featured: true
-draft: true
+draft: false
 tags:
   - experience
   - Software
@@ -17,6 +17,8 @@ description:
 ## Table of contents
 
 # The Raymond Corporation
+
+![RayLogo](assets/images/RayLogo.png)
 During my Spring 2023 semester I was extended the opportunity to work within the Product Engineering Team as a coop for a seven month period during the summer and fall sessions of 2023 at Greene NY. 
 
 Upon considering the offer, I accepted with excitement to learn what it means to be a professional engineer and to work in a competitive environment. And The Raymond Corporation, one of the largest producer of electric lift trucks and supply chain solutions, did not disappoint. 
@@ -42,6 +44,8 @@ Before my time at Raymond a previous intern worked on a control box that would b
 I decided that the creation of these learning labs for the test boxes would be worth the time and would speed up the learning process for future employees. 
 
 With this in mind I created 2 labs for the Direct Soft 6 Suite of PLC's.
+
+![directSoft6](assets/images/ds6.jpg)
 
 ### Lab 1, Basic Input Output
 
@@ -81,7 +85,25 @@ After the improvements made to the fixture, I was able to start a trial run of t
 
 Unfortunately nothing stopped working with the exclusion of power outages that would take place and even then the PLC kept track of the readings and you could start the process from where it left off. 
 
-Even on my last day nothing broke and I still believe that the fixture is running somewhere at Raymond. 
+Even on my last day nothing broke and I still believe that the fixture is running somewhere at Raymond.
+
+## CAN Message Translator
+
+The Final Project that I got to work on was a CAN translation python script that would take the resulting file from a tracing using a P-CAN device and find the value of each field being transmitted throughout the truck by taking the CAN frame and translating each value within it. 
+
+![PCAN_Device](assets/images/PCAN.jpg)
+
+This was done by taking the output of the P-CAN Device (an 8 byte code) and the Node ID of the message, splitting and translating the output based on the given Node ID. 
+
+The basic architecture for the script was to create a python class for each of the Node ID's in the output. Each class containing the methods for separating the output of the message into given fields and then translating each of those fields from a binary format into a readable format such translating a 4 byte binary value into Rotations Per Minute, MPH, or detailing the certain state of a device connected to the CAN Line. 
+
+The results of the translations would then be saved as a formatted xlsx file that could be shared within the business. 
+
+Also during this time I was able to make a basic UI for the application as well as creating documentation on how to use the CLI version of the tool. 
+
+# Conclusion
+
+The Raymond Corporation, was an excellent place to work and grow professionally and through working on a wide range of projects as well as assisting in the day to day operations of the company I feel looking back that Raymond had provided a place where I could really become a Engineer, learning multiple skills both technical and professional. 
 
 
 
