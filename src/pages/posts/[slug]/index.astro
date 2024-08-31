@@ -14,10 +14,9 @@ export interface Props {
 export async function getStaticPaths() {
   const posts = await getCollection("blog", ({ data }) => !data.draft);
 
-  const postsWithRT = await getPostsWithRT(posts);
+  const postsWithRT = await getPostsWithRT(posts); // replace reading time logic with this func
 
-  const postResult = postsWithRT.map(post => ({
-    // make sure to replace posts with postsWithRT
+   const postResult = postsWithRT.map(post => ({ // make sure to replace posts with postsWithRT
     params: { slug: post.slug },
     props: { post },
   }));

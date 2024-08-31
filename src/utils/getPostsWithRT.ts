@@ -2,11 +2,16 @@ import type { MarkdownInstance } from "astro";
 import type { CollectionEntry } from "astro:content";
 import { slugifyStr } from "./slugify";
 
+interface Frontmatter {
+  frontmatter: {
+    title: string;
+    minutesRead: string;
+  };
+}
+
 export const getReadingTime = async () => {
   // Get all posts using glob. This is to get the updated frontmatter
-  const globPosts = import.meta.glob("../content/blog/*.md") as Promise<
-    CollectionEntry<"blog">["data"][]
-  >;
+  const globPosts = import.meta.glob<Frontmatter>("../content/blog/*.md");
 
   // Then, set those frontmatter value in a JS Map with key value pair
   const mapFrontmatter = new Map();
