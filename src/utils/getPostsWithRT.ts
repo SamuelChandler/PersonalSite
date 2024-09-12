@@ -21,7 +21,7 @@ export const getReadingTime = async () => {
       const { frontmatter } = await globPost();
       mapFrontmatter.set(
         slugifyStr(frontmatter.title),
-        frontmatter.readingTime
+        frontmatter.minutesRead
       );
     })
   );
