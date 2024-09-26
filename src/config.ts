@@ -6,7 +6,7 @@ export const SITE: Site = {
   profile: "https://satnaing.dev/",
   desc: "A Website Dedicated to communicating information about Samuel Chandler for those who are interested",
   title: "Samuel Chandler",
-  ogImage: "astropaper-og.jpg",
+  ogImage: "OGImage.jpg",
   lightAndDarkMode: true,
   postPerIndex: 4,
   postPerPage: 3,
