@@ -1,6 +1,7 @@
 ---
 author: Samuel Chandler
 pubDatetime: 2024-08-24T00:39:58Z
+modDatetime: 2024-10-17T00:39:58Z
 title: My Time At The Raymond Corporation
 slug: Raymond
 featured: true
